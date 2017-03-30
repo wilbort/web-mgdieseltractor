@@ -67,7 +67,10 @@ body {
 	font-weight: 700;
 	cursor: pointer;
 }
-
+.barra-nav .logo img {
+	height: 50px;
+	width: 250px;
+}
 
 
 
