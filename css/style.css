@@ -10,7 +10,7 @@ body {
 	height: 100vh;
 }
 .barra-top {
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.5);
 	height: 124px;
 	display: flex;
 	flex-direction: column;
@@ -67,7 +67,10 @@ body {
 	font-weight: 700;
 	cursor: pointer;
 }
-
+.barra-nav .logo img {
+	height: 50px;
+	width: 250px;
+}
 
 
 
