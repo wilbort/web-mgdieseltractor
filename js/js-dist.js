@@ -1,0 +1,1 @@
+function parallax(){function o(o,n){$(o).css({"background-attachment":"fixed","background-position":"center "+-(c*n)+"px"})}function n(o,n){$(o).css({position:"relative",top:-(c*n)+"px"})}var c=$(window).scrollTop();o(".bloque-home",.2),n(".txt-welcome",0),o(".seccion-slogan",.08)}$(window).on("scroll",parallax);

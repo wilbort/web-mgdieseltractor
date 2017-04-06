@@ -1,0 +1,5 @@
+
+
+
+
+.contacto{width:100%;height:100vh;background:teal;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}.contacto .datos{width:600px;height:200px;background:gold;position:relative;left:25px}.contacto .formulario{width:600px;height:200px;background:peru;position:relative;right:25px}
