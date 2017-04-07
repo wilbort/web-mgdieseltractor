@@ -11,17 +11,31 @@ function parallax(){
       'background-position': 'center ' + -(s*t) + 'px' 
     })
   }
-  // efecto parallax para los textos
-  function parallaxFront(el,t){
+
+  function parallaxBg2(el,t){
     $(el).css({
-      'position': 'relative',
-      'top': -(s*t) + 'px'
+      'background-attachment': 'fixed',
+      'background-position': '50% ' + -((s*t)- 480 )+ 'px' 
     })
   } 
-  parallaxBg('.bloque-home',.2);
-  parallaxFront('.txt-welcome',0);
-
+  parallaxBg('.home',.2);
   parallaxBg('.seccion-slogan',.08);
+  parallaxBg2('.banner1',.6);
 
+  //parallaxFront('.txt-welcome',0);
 
 }
+
+// $(document).ready(function(){
+ 
+//   $(window).scroll(function(){
+//     var barra = $(window).scrollTop();
+//     var posicion =  (barra * 0.1);
+    
+//     $('.banner1').css({
+//       'background-position': '0 -' + posicion + 'px'
+//     });
+ 
+//   });
+ 
+// });
