@@ -10,13 +10,11 @@ body {
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
-
 ::-webkit-scrollbar
 {
 	width: 12px;
 	background-color: #F5F5F5;
 }
-
 ::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
@@ -277,7 +275,7 @@ header.header-home {
 }
 .servicios .item-servicios {
 	height: 400px;
-	width: 1300px;
+	width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -285,10 +283,14 @@ header.header-home {
 }
 .servicios .item-servicios .items {
 	height: 280px;
-	width: 400px;
+	width: 370px;
 	position: relative;
-	overflow: hidden;
-	
+	overflow: hidden;	
+	box-shadow: 0 0 0 4px #fff,
+							0 0 0 5px #ccc,
+							0 15px 15px -10px #000;
+	border-radius: 2px;
+							
 }
 .servicios .item-servicios .items img {
 	width: 100%;
@@ -331,7 +333,7 @@ header.header-home {
 	line-height: 1.5;
 	padding: 1.5em;
 	box-sizing: border-box;
-	transition: all .4s ease-in-out;
+	transition: all .3s;
 }
 .servicios .item-servicios .items .ocultar span {
 	color: #FFBC13;
@@ -487,7 +489,7 @@ header.header-nosotros {
 
 .about-body .about .texto {
 	width: 600px;
-	padding: 0 15px;
+	padding: 0 15px 0 0;
 	box-sizing: border-box;
 }
 .about-body .about .texto p {
@@ -524,6 +526,9 @@ header.header-nosotros {
 .about-body .about .img img {
 	height: 380px;
 	width: 570px;
+	box-shadow: 0 0 0 4px #fff,
+							0 0 0 5px #ccc,
+							0 15px 15px -10px #000;
 }
 .about-body .spacer {
 	height: 80px;
@@ -618,7 +623,7 @@ header.header-nosotros {
 	box-sizing: border-box;
 }
 .equipo .bloque-equipo .team .team-item:nth-child(1) .img{
-	background: url(../img/team1.jpg);
+	background: url(../img/team1b.jpg);
 	background-size: cover;
 }
 .equipo .bloque-equipo .team .team-item:nth-child(2) .img {
@@ -670,7 +675,6 @@ header.header-nosotros {
 	text-align: center;
 	color: #797979;
 }
-
 .equipo .borde-h3 {
 	background: #ffbc13;
 	height: 4px;
@@ -681,6 +685,129 @@ header.header-nosotros {
 	height: 70px;
 	width: 1200px;
 }
+/*************************/
+/*************************/
+/*************************/
+
+/* estilos servicios.html*/
+.banner2 {
+	width: 100%;
+	height: 360px;
+	background: url(../img/bg-section-4.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* about-body */
+.about-servicios {
+	height: 1370px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*background: peru;*/
+}
+.about-servicios .container {
+	height: 350px;
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+}
+.about-servicios .container .container1 {
+	height: 350px;
+	width: 630px;
+	/*background: #111;*/
+}
+.about-servicios .container .container1 .servicio-item {
+	height: 320px;
+	width: 630px;
+	margin-left: 20px;
+}
+.about-servicios .container .container1 .servicio-item h2 {
+	font-size: 1.758em;
+	font-family: "Montserrat", sans-serif;
+  color: #4b4b4b;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about-servicios .container .container1 .servicio-item p {
+	line-height: 1.6;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	color: #4b4b4b;
+	margin: 0;
+	margin-bottom: 15px;
+	margin-right: 20px;
+}
+.about-servicios .container .container1 .servicio-item p:before {
+	color: #FF780A;
+	margin-right: 5px;
+}
+.about-servicios .container .container1 .servicio-item .vent {
+	margin-bottom: 2px;
+	margin-left: 10px;
+}
+.about-servicios .container .container1 .servicio-item .bot {
+	margin-bottom: 30px
+}
+.about-servicios .container .container1 .servicio-item a {
+	background: #ff780a;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	color: white;
+	padding: 10px 10px;
+	width: 180px;
+	text-align: center;
+	border-radius: 5px;
+	transition: all .3s ease;
+}
+.about-servicios .container .container1 .servicio-item a:hover {
+	background: #4b4b4b;
+	color: white;
+}
+
+.about-servicios .container .container2 {
+	height: 350px;
+	width: 570px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about-servicios .container .container2 img {
+	height: 290px;
+	width: 540px;
+	box-shadow: 0 0 0 4px #fff,
+							0 0 0 5px #ccc,
+							0 15px 15px -10px #000;
+}
+.about-servicios .spacer {
+	height: 80px;
+	width: 1200px;
+	display: flex;
+	align-items: center;
+}
+.about-servicios .spacer .borde {
+	height: 4px;
+	width: 1200px;
+	background: #eee;
+	margin: 0 auto;
+}
+/*************************/
+/*************************/
+/*************************/
+
+/* estilos contactanos.html*/
 
 
 

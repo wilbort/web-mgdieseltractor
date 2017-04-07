@@ -18,9 +18,18 @@ function parallax(){
       'background-position': '50% ' + -((s*t)- 480 )+ 'px' 
     })
   } 
+
+  function parallaxBg3(el,t){
+    $(el).css({
+      'background-attachment': 'fixed',
+      'background-position': '50% ' + -((s*t)- 840 )+ 'px' 
+    })
+  }
+
   parallaxBg('.home',.2);
   parallaxBg('.seccion-slogan',.08);
   parallaxBg2('.banner1',.6);
+  parallaxBg3('.banner2',.6);
 
   //parallaxFront('.txt-welcome',0);
 
