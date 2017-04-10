@@ -61,9 +61,92 @@
   </div>
 </div>
 
+<div class="formulario">
+  <div class="container">
+    <div class="datos">
+      <div class="spacer"></div>
+      <p>Gracias por visitar MG Diesel Tractor. Te puedes poner en contacto con nosotros de varias formas. Selecciona la que más te acomode y nos aseguraremos de contactarte tan pronto como podamos:</p>
+      <div class="bloque">
+        <div class="icono icon-celular-2">
+        </div>
+        <div class="txt">
+          <p>+123 456 7890 - Office</p>
+          <p>(123) 456 7890 - Fax</p>
+        </div>
+      </div>
+      <div class="spacer-2"></div>
+      <div class="bloque">
+        <div class="icono icon-ubicacion">
+        </div>
+        <div class="txt">
+          <p>Psj. Orbegoso # 475 - Oficina</p>
+          <p>Trujillo - La Libertad - Perú</p>
+        </div>
+      </div>
+      <div class="spacer-2"></div>
+      <div class="bloque">
+        <div class="icono icon-correo-2">
+        </div>
+        <div class="txt">
+          <p>info@mgdieseltractor.com</p>
+          <p>ventas@mgdieseltractor.com</p>
+        </div>
+      </div>
+      <div class="spacer-2"></div>
+      <div class="spacer"></div>
 
+    </div>
+    <div id="form" class="form">
+      <div class="spacer"></div>
+        <h2>Formulario de contacto</h2>
+        <div>
+          <form action="php/enviar.php" method="post">
+            <div class="nam">
+              <input type="text" placeholder="Nombre:" name="nombre" required=""><span class=""></span>
+            </div>
+            <div class="nam">
+              <input type="text" placeholder="Email:" name="correo" required><span class=""></span>
+            </div>
+            <div class="textarea">
+              <textarea name="mensaje" id="" placeholder="Mensaje:"></textarea>
+            </div>
+              <input class="boton" type="submit">
+          </form>
+        </div>
+      
+    </div>
+  </div>
+</div>
 
+<div class="banner1 banner3">
+  <div class="spacer"></div>
+  <h3>Encuentra nuestra oficina <span>MG</span></h3>
+  <a href="#mapa-mg">Ubícanos</a>
+  <div class="spacer"></div>
+</div>
 
+<div id="mapa-mg" class="mapa">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2348.6337970562417!2d-78.99442755525538!3d-8.110088393676817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1491768337296" frameborder="0" style="border:0"></iframe>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.mapa').click(function() {
+      $('.mapa iframe').css("pointer-events","auto")
+    });
+    $(".mapa").mouseleave(function() {
+      $('.mapa iframe').css("pointer-events","none")
+    });
+  });
+
+</script>
+<!-- <script language="javascript">
+  $(function(){
+    $('#mapa-mg').click(function(e) {
+      $(this).find('iframe').css('pointer-events','all')}).mouseleave(function(e){
+      $(this).find('iframe').css('pointer-events','none')});
+  })
+</script> -->
 
 
 <footer class="site-footer">
@@ -113,7 +196,7 @@
         </div>
       </div>
       <div class="redes-sociales">
-        <a href="http://www.facebook.com/MGDieselTractor" class="icon-facebook"></a>
+        <a href="http://www.facebook.com/MGDieselTractor" target="_blank" class="icon-facebook"></a>
         <a href="" class="icon-youtube"></a>
         <a href="" class="icon-google"></a>
       </div>
